@@ -1,0 +1,45 @@
+/** Mobile first **/
+.image-carousel {
+    height: auto;
+}
+
+.image-slider-small {
+    display: none;
+}
+
+.nav-arrow-image {
+    cursor: pointer;
+    transform: rotate(90deg);
+    width: 40%;
+}
+
+@media (min-width: 640px){
+
+}
+
+@media (min-width: 768px){
+
+}
+
+
+@media (min-width: 1024px){
+    .image-slider-small {
+        display: block;
+    }
+
+    .nav-arrow-image {
+        transform: rotate(0deg);
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .image-slider-small {
+        display: block;
+    }
+
+    .nav-arrow-image {
+        transform: rotate(0deg);
+        width: 100%;
+    }
+}

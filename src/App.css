@@ -10,7 +10,9 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  opacity: 0.75;
+  background-image: url('https://cdn.pixabay.com/photo/2017/02/14/09/01/wood-2065357_960_720.jpg');
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +21,31 @@
   color: white;
 }
 
+.App-body {
+  background-image: url('https://c.pxhere.com/photos/02/99/trees_wood_yellow_wood_oak_sandalwood_teak_wood_grain-1161832.jpg!d');
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-footer {
+  opacity: 0.75;
+  background-image: url('https://cdn.pixabay.com/photo/2017/02/14/09/01/wood-2065357_960_720.jpg');
+  background-color: #282c34;
+  min-height: 10vh;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+/** Add box-sizing to all elements **/
+* {
+  box-sizing: border-box;
 }
 
 @keyframes App-logo-spin {
@@ -30,4 +55,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/** Define columns for desktop **/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/** Columns for mobile **/
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/** Base column styling **/
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+  /*border: 1px solid black;*/
+}
+
+/** Clear rows **/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/** Define image scalability **/
+img, embed, object, video {
+  max-width: 100%;
 }
