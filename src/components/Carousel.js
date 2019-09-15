@@ -128,22 +128,10 @@ class Slider extends React.Component {
   constructor (props) {
     super(props)
 
-    this.imageStyles = {
-      backgroundImage: `url(${this.props.src.img})`,
-      backgroundSize: 'auto',
-      backgroundPosition: 'center',
-    }
-
-    this.styles = {
-      cursor: 'pointer',
-      transition: 'width 1s'
-    }
-
     if (props.size === 'normal') {
       this.col = 'col-4'
     } else {
       this.col = 'col-3'
-      this.styles.opacity = 0.5
     }
   }
 
@@ -153,13 +141,15 @@ class Slider extends React.Component {
 
   render () {
     return (
-      <div className={'image-slider image-slider-'+this.props.size +' '+ this.col } style={this.styles} onClick={this.onClick}>
-        {/*<div className='image-slider-image' style={this.imageStyles} />*/}
-        <img src={this.props.src.img} alt={this.props.src.title}/>
-        <div className='image-slider-content'>
-          {this.props.src.shortContent}
+        <div className={'image-slider transition-opacity image-slider-'+this.props.size +' '+ this.col } onClick={this.onClick}>
+          {/*<div className='image-slider-image' style={this.imageStyles} />*/}
+          <Link to={this.props.src.link}>
+            <img className='' src={this.props.src.img} alt={this.props.src.title}/>
+          </Link>
+          <div className='image-slider-content'>
+            {this.props.src.shortContent}
+          </div>
         </div>
-      </div>
     )
   }
 }

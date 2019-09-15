@@ -3,14 +3,20 @@
     height: auto;
 }
 
+.image-slider {
+    cursor: pointer;
+    transition: width 1s, opacity 4s;
+}
+
 .image-slider-small {
     display: none;
+    opacity: 0.5;
 }
 
 .nav-arrow-image {
     cursor: pointer;
     transform: rotate(90deg);
-    width: 40%;
+    width: 20%;
 }
 
 @media (min-width: 640px){

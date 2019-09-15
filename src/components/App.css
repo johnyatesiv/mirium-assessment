@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Al Bayan";
 }
 
 .App-logo {
@@ -10,33 +11,37 @@
 
 .App-header {
   background-color: #282c34;
-  opacity: 0.75;
-  background-image: url('https://cdn.pixabay.com/photo/2017/02/14/09/01/wood-2065357_960_720.jpg');
+  opacity: 0.80;
+  background-image: url('/app-trim.png');
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: whitesmoke;
 }
 
 .App-body {
-  background-image: url('https://c.pxhere.com/photos/02/99/trees_wood_yellow_wood_oak_sandalwood_teak_wood_grain-1161832.jpg!d');
-  min-height: 80vh;
+  background-image: url('/app-background.png');
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(12px + 2vmin);
+  color: whitesmoke;
 }
 
 .App-footer {
-  opacity: 0.75;
-  background-image: url('https://cdn.pixabay.com/photo/2017/02/14/09/01/wood-2065357_960_720.jpg');
+  opacity: 0.80;
+  background-image: url('/app-trim.png');
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 5vh;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 0.5%;
+  color: whitesmoke;
 }
 
 .App-link {
