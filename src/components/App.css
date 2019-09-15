@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  font-family: "Al Bayan";
+  font-family: MetaWebPro-Bold,sans-serif;
+  color: whitesmoke;
+  font-weight: bolder;
 }
 
 .App-logo {
@@ -14,12 +16,13 @@
   opacity: 0.80;
   background-image: url('/app-trim.png');
   min-height: 10vh;
+  max-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: whitesmoke;
+  font-weight: bolder;
 }
 
 .App-body {
@@ -31,6 +34,7 @@
   justify-content: center;
   font-size: calc(12px + 2vmin);
   color: whitesmoke;
+  font-weight: bolder;
 }
 
 .App-footer {

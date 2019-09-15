@@ -50,11 +50,17 @@ a {
 }
 
 @media (min-width: 768px){
-    .active-image {
-        display: initial;
-        width: 100%;
+    .nav {
+        font-size: 1.5rem;
     }
 
+    .content-row {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (min-width: 1024px){
     .nav {
         font-size: 1.2rem;
         text-align: left;
@@ -62,10 +68,11 @@ a {
         color: whitesmoke;
     }
 
-}
+    .active-image {
+        display: initial;
+        width: 100%;
+    }
 
-
-@media (min-width: 1024px){
     .sub-image-row-mobile {
         display: none;
     }
@@ -83,6 +90,10 @@ a {
         padding: 5%;
         width: 40%;
         cursor: pointer;
+    }
+
+    .content-row {
+        font-size: 1.4rem;
     }
 }
 
